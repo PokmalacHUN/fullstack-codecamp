@@ -1,0 +1,169 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  header {
+  
+  }
+  
+  footer {
+  
+  }
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav div a {
+    padding: 0px 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(111, 111, 197);
+}
+
+
+nav button{
+    justify-content: flex-end;
+    color: white;
+    padding: 8px 12px;
+    background-color: rgb(92, 92, 204);
+    border: none;
+    border-radius: 5px;  
+    margin-right: 10%;
+}
+
+
+.tagline {  
+    color: rgb(111, 111, 197);
+    padding-left: 80px;
+}
+
+main h1 {
+    margin: 0px;
+    float: left;
+    width: 35%;
+    font-size: 120px;
+    padding-left: 80px;
+}
+
+.computer{
+    float: right;
+    width: 50%;
+    padding-right: 10%;
+}
+
+main input {
+    width: 20%;
+    height: 50px;
+    float: left;
+    margin-left: 80px;   
+    background-image: linear-gradient(90deg, rgb(38, 38, 177), white);
+    border: none;
+}
+
+main button {
+    float: left;
+    padding: 15px 25px;
+    background-color: rgb(54, 54, 145);
+    color: white;
+    border: none;
+}
+
+.placeholder {
+    font-size: 24px;
+}
+
+.secondSection {
+    margin-top: 35%;
+    margin-left: 80px;
+    width: 100%;
+}
+
+.subsection p  {
+    font-size: 20px;
+}
+
+.subsection {
+    width: 15%;
+    float: left;
+    display: inline;
+    margin-right: 150px;
+}
+
+.thirdSection {
+    width: 40%;
+    padding-left: 80px;
+    margin-top: 1400px;
+}
+
+.thirdSection h1 {
+    font-size: 80px;
+}
+
+.thirdSection p {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .subsection {
+      width: 100%;
+    }
+
+    p {
+    width: 100%;
+    }
+
+    img {
+    width: 100%;
+    }
+
+    input {
+    width: 100%;
+    }
+
+    h1 {
+    width: 100%;
+    }
+
+    h4 {
+    width: 100%;
+    }
+
+    a {
+    width: 100%;
+    }
+  }
+

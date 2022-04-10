@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(101, 193, 230);
+    margin: 0;
+    padding: 0;
+}
+
+div {   
+    border: 5px solid rgb(23, 192, 23);
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 35%;
+    right: 35%;
+}
+
+h1 {
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-style: italic;
+}
+
+nav {
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+a {
+    color: rgb(95, 235, 149);   
+}
+
+h2 {
+    font-family: "Roboto"; 
+    text-align: left;
+    margin: 55px;
+    color: white;
+    font-size: 35px;
+}
+
+p {
+    font-size: 26px;
+    color: white;
+    margin-left:55px; 
+    margin-right:55px;
+    margin-bottom: 40px;
+}
+
+p::first-letter {
+    font-size: 30px;
+}
+/*
+p::nth-child(2) {
+    font-size: 30px;
+}
+
+p::nth-child(even) {
+    font-size: 30px;
+}
+
+p::nth-child(2n+1) {
+    font-size: 30px;
+}
+*/
+
+img {
+    margin-right:60px;  
+    margin-left:40px;  
+    width: 300px; 
+    height: 400px;
+}
+
+section > section {
+    display: flex;
+}
+
+
+span{
+    color: black;
+}
+
+ul {
+    display: inline;
+    list-style: none;
+    color: black;
+}

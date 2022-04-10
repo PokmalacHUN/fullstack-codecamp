@@ -1,0 +1,286 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+header {
+    background-color: rgb(102, 118, 138);
+    margin: 0;
+  }
+  
+header nav *{
+    margin-top: 1%;
+    display: inline-block;
+}
+
+header nav a {
+    margin-left: 2.5%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav img {
+    margin-left: 38%;
+    width: 2%;
+    margin-top: 10px;
+}
+
+header nav button {
+    float: right;
+    margin-right: 2.5%;
+    padding: 12px 10px 10px 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(102, 118, 138);
+    font-weight: bold;
+}
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+
+
+.section1 {
+    height: 800px;
+    background-color: rgb(102, 118, 138);
+    color: white;
+    font-family: Source Sans Pro, sans-serif;
+    text-align: center;
+
+}
+
+.section1  h1{
+    padding-top: 5%;
+    margin: auto;
+    font-size: 120px;
+}
+
+.section1 p {
+    padding: 3% 10%;
+    font-size: 30px;
+}
+
+.section1 img {
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+}
+
+.video {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 65px;
+}
+
+.section1 div + span {
+    font-style: italic;
+    color: black;
+}
+
+.section2 {
+    height: 500px;
+    text-align: center;
+}
+
+.section2 h1 {
+    font-size: 60px;
+    padding-top: 3%;
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+}
+
+.section2 p {
+    font-size: 25px;
+    padding: 0 30%;
+}
+
+.section3 {
+    height: 1000px;
+    background-color: rgb(199, 213, 224);
+    padding: 0 15%;
+    text-align: center;
+}
+
+.section3 section {
+    float: left;
+    width: 50%;
+    padding: 5% 5%;
+}
+
+.section3 div {
+    border: 1px solid rgb(102, 118, 138);
+    width: 600px;
+    height: 350px;
+    margin: 0 auto;
+    background-color: rgb(102, 118, 138);
+}
+
+.section3 h3 {
+    font-size: 25px;
+    font-family: Oswald, sans-serif;
+}
+
+.section3 p {
+    padding-bottom: 10%;
+    font-size: 20px;
+}
+
+.section3 button {
+    background-color: rgb(199, 213, 224);
+    height: 80px;
+    padding: 0 15%;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.section4 {
+    height: 700px;
+    background-color: white;
+    text-align: center;
+}
+
+.section4 h1 {
+    font-size: 50px;
+    padding-top: 80px;
+}
+
+.section4 p {
+    padding: 2% 30%;
+    font-size: 30px;
+}
+
+.section4 button {
+    background-color: white;
+    height: 80px;
+    padding: 0 5%;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.section5 {
+    height: 400px;
+    background-color: rgb(22, 31, 42);
+}
+
+.section5 ul {
+    list-style: none;
+}
+
+.section-with-icons {
+    float: left;
+    display: inline;
+    padding-left: 40px;
+}
+
+.section-with-icons img{
+    margin: 50px 20px 5px 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.section-with-icons h6{
+    color: rgb(102, 118, 138);
+    font-size: 15px;
+    margin: 30px 0px 5px 20px;
+}
+
+.section-with-icons a {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.section-with-address {
+    float: right;
+    padding-right: 80px;
+}
+
+.section-with-address h6{
+    color: white;
+    font-size: 20px;
+    margin-bottom: auto;
+    margin-top: 60px;
+}
+
+.section-with-address h6 + h6{
+    color: white;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.section-with-address address {
+    color: rgb(105, 105, 105);
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.section-with-address a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section5 p{
+    color: white;
+    float: left;
+    width: 50%;
+    clear: both;
+    margin-top: 90px;
+    margin-left: 60px;
+}
+
+.section5 > section > p + img {
+    float: right;
+    padding-right: 65px;
+    margin-top: 50px;
+} 
+
+.section5 hr {
+    border: 1px solid rgb(247, 3, 206);
+    width: 90%;
+    clear: both;
+}
+
+
+
+
+
