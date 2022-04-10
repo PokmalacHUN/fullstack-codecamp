@@ -1,0 +1,35 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+body{
+  background-color: gray;
+}
+
+input[type="text"], textarea {
+  background-color : rgb(126, 149, 192); 
+}
+
+#input {
+  border: 2px solid white;
+  display: block;
+}
+
+#convert {
+  display: block;
+}
